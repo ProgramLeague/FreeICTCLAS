@@ -1,0 +1,91 @@
+<html>
+<head>
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>ICTCLAS的源码</title>
+<meta name="Microsoft Theme" content="blends 011">
+</head>
+<body background="images/blegtext.gif" bgcolor="#CCCCCC" text="#000000" link="#993300" vlink="#0000FF" alink="#FF9900">
+
+<!--mstheme--><font face="宋体">
+
+<p><img border="0" src="images/logo1.jpg" width="226" height="80"><img border="0" src="images/logo2.jpg" width="112" height="79"><img border="0" src="images/logo3.jpg" width="160" height="79"></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    
+<b><font face="隶书" color="#800080" size="5">ICTCLAS</font></b><font face="隶书" color="#800080" size="6">源码结构</font></p>
+<p><font face="隶书" color="#800080" size="6">Codes</font></p>
+<p>│  ICTCLAS_WIN.cpp&nbsp;&nbsp; Windows界面的程序<br>   
+│  ICTCLAS_Win.dsp<br>    
+│  ICTCLAS_WIN.dsw<br>    
+│  ICTCLAS_WIN.h<br>    
+│  ICTCLAS_Win.exe&nbsp;&nbsp;&nbsp; 可执行程序<br>   
+│  ICTCLAS_WinDlg.cpp<br>    
+│  ICTCLAS_WinDlg.h<br>    
+│  resource.h<br>    
+│  StdAfx.cpp<br>    
+│  StdAfx.h<br>    
+│  log.txt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    
+日志<br>
+│  ICTCLAS_Win.rc&nbsp;&nbsp;&nbsp;&nbsp; Windows界面的资源<br>   
+│<br>
+├─Utility&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    
+共用函数模块<br>
+│      ContextStat.cpp<br>    
+│      ContextStat.h<br>    
+│      Dictionary.cpp<br>    
+│      Dictionary.h<br>    
+│      Utility.h<br>    
+│      Utility.cpp<br>    
+│<br>
+├─Unknown&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    
+未登录词识别模块<br>
+│      UnknowWord.cpp<br>    
+│      UnknowWord.h<br>    
+│<br>
+├─Tag&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    
+HMM标注模块<br>
+│      Span.cpp<br>    
+│      Span.h<br>    
+│<br>
+├─Segment&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    
+词语切分模块<br>
+│      DynamicArray.h<br>    
+│      NShortPath.cpp<br>    
+│      NShortPath.h<br>    
+│      Queue.cpp<br>    
+│      Queue.h<br>    
+│      SegGraph.cpp<br>    
+│      Segment.cpp<br>    
+│      Segment.h<br>    
+│      DynamicArray.cpp<br>    
+│      SegGraph.h<br>    
+│<br>
+├─Result&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    
+结果生成模块<br>
+│      Result.cpp<br>    
+│      Result.h<br>    
+│<br>
+├─Data&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    
+概率数据文件<br>
+│      lexical.ctx<br>    
+│      BigramDict.dct<br>    
+│      coreDict.dct<br>    
+│      nr.dct<br>    
+│      nr.ctx<br>    
+│      ns.ctx<br>    
+│      ns.dct<br>    
+│      tr.dct<br>    
+│      tr.ctx<br>    
+│<br>
+└─res&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    
+Windows界面的资源<br>
+<br>
+</p>
+<!--msthemeseparator--><p align="center"><img src="images/blesepa.gif"></p>
+<p><center>[<a href="mailto:%20zhanghp@software.ict.ac.cn">跟我们联系</a>|<a href="http://www.nlp.org.cn/project/project.php?proj_id=6">参与开放项目</a>|<a href="http://mtgroup.ict.ac.cn">返回主页</a>]</center></p>
+<CENTER>Copyright&copy;2002 软件室mtgroup版权所有</CENTER><!--mstheme--></font> 
+
+</body>
+
+</html>

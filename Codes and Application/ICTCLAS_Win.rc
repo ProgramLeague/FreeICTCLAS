@@ -1,0 +1,261 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\ICTCLAS_Win.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\ICTCLAS_Win.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 262, 121
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About ICTCLAS"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,18,13,21,20
+    LTEXT           "Version Release Free Build0705",IDC_STATIC,46,8,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C)中国科学院计算所软件室2002",IDC_STATIC,46,
+                    17,140,8
+    DEFPUSHBUTTON   "OK",IDOK,199,7,50,14,WS_GROUP
+    LTEXT           "作者： 张华平硕士生   刘群副研究员",IDC_STATIC,46,28,
+                    142,8
+    LTEXT           "Email:zhanghp@software.ict.ac.cn  Tel:+86-10-62587953",
+                    IDC_STATIC,19,36,226,8
+    LTEXT           "程学旗主任    白硕首席科学家",IDC_STATIC,25,64,123,8
+    LTEXT           "邹纲同学 张浩同学  李继锋同学 ",IDC_STATIC,25,74,126,8
+    LTEXT           "周立新博士 李素建博士 王长胜硕士 王树西同学 张奕涛同学",
+                    IDC_STATIC,25,84,216,8
+    LTEXT           "北京大学计算语言所     富士通研究中心   人民日报信息中心",
+                    IDC_STATIC,25,94,217,8
+    GROUPBOX        "致谢: ",IDC_STATIC,15,56,232,58,BS_CENTER
+    LTEXT           "Homepage: www.nlp.org.cn;mtgroup.ict.ac.cn;pipy_world.y365.com",
+                    IDC_STATIC,19,46,226,8
+END
+
+IDD_ICTCLAS_WIN_DIALOG DIALOGEX 0, 0, 391, 298
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "中科院计算所汉语词法分析系统"
+FONT 10, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDT_SOURCE,7,8,377,98,ES_MULTILINE | WS_VSCROLL
+    DEFPUSHBUTTON   "运行",IDC_BTN_RUN,7,140,61,14
+    CONTROL         "词语切分",IDC_RADIO_SEG,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,13,123,41,10
+    CONTROL         "一级标注",IDC_RADIO_FIRSTTAG,"Button",
+                    BS_AUTORADIOBUTTON,78,123,41,10
+    CONTROL         "二级标注",IDC_RADIO_SECONDTAG,"Button",
+                    BS_AUTORADIOBUTTON,143,123,41,10
+    CONTROL         "北大标准",IDC_RADIO_PKU,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,208,123,41,10
+    CONTROL         "973标准",IDC_RADIO_973,"Button",BS_AUTORADIOBUTTON,273,
+                    123,41,10
+    CONTROL         "XML",IDC_RADIO_XML,"Button",BS_AUTORADIOBUTTON,338,123,
+                    41,10
+    PUSHBUTTON      "处理文件...",IDC_BTN_FILEOPEN,112,140,61,14
+    PUSHBUTTON      "退出",IDOK,217,140,61,14
+    EDITTEXT        IDC_EDT_RESULT,7,172,377,118,ES_MULTILINE | ES_READONLY | 
+                    WS_VSCROLL
+    LTEXT           "处理用时：",IDC_STATIC,287,160,39,8
+    EDITTEXT        IDC_EDT_TIME,321,157,48,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "ms",IDC_STATIC,373,160,9,8
+    GROUPBOX        "操作选项",IDC_STATIC,7,108,187,29,BS_CENTER
+    GROUPBOX        "输出格式",IDC_STATIC,201,108,183,29,BS_CENTER
+    PUSHBUTTON      "关于...",IDC_BTN_ABOUT,322,140,61,14
+    EDITTEXT        IDC_EDT_RESULTNUM,7,157,48,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "结果",IDC_STATIC,59,160,16,8
+    LTEXT           "当前结果评分：",IDC_STATIC,182,160,55,8
+    EDITTEXT        IDC_EDT_SCORE,231,157,48,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "ICTCLAS_Win MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "ICTCLAS_Win\0"
+            VALUE "LegalCopyright", "Copyright (C) 2002\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "ICTCLAS_Win.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "ICTCLAS_Win Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 254
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 114
+    END
+
+    IDD_ICTCLAS_WIN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 384
+        TOPMARGIN, 8
+        BOTTOMMARGIN, 291
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About ICTCLAS_Win..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\ICTCLAS_Win.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
